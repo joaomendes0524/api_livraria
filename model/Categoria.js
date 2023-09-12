@@ -3,7 +3,7 @@ const sequelize = require("sequelize");
 
 //importação da conexão com o banco de dados
 
-const connetcion = require("../database/database");
+const connection = require("../database/database");
 
 /*
 Mapeamento da tabela de categoria 
@@ -12,11 +12,13 @@ Parâmetros do método define:
 2° - Campos da tabela e suas regras (tipo, null, primary key etc...), deve ser um JSON.
 */
 const Categoria = connection.define(
-    'tbl_categoria', {
+    'tbl_categoria', 
+    {
         codigo_categoria:{
-        type: sequelize.STRING,
+        type: sequelize.INTEGER,
         autoIncrement: true,
         primaryKey: true },
+
     nome_categoria:{
         type: sequelize.STRING(250),
         allowNull: false }
