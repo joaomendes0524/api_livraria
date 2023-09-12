@@ -1,6 +1,9 @@
 //importando o módulo express
 const express = require("express");
 
+//importação do arquivo de model da tabela de categoria
+const categoria = require("./model/Categoria");
+
 //instância executável do módulo express
 const app = express();
 

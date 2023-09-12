@@ -7,7 +7,7 @@ PARÂMETROS:
 1° - nome do banco de dados;
 2° - usuário do banco de dados;
 3° - a senha do banco de dados;
-4° - objeto JSON com dados de configuração.
+4° - objeto JSON com dados de configuração:
             1- host do banco de dados
             2- a porta lógica do banco de dados
             3- dialeto sql a ser utilizado
